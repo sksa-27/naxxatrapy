@@ -2,7 +2,7 @@ import setuptools
 from packagename.version import Version
 
 
-setuptools.setup(name='py-boilerplate',
+setuptools.setup(name='naxxatrapy',
                  version=Version('1.0.0').number,
                  description='Python Package Boilerplate',
                  long_description=open('README.md').read().strip(),
