@@ -56,24 +56,28 @@ def acceleration(velocity, time):
     """
     pass
 
-
-def initial_velocity():
+def initial_velocity(v,a,t):
+    return(v-a*t)
     pass
 
 
-def final_velocity():
+def final_velocity(u,a,t):
+    return(u+a*t)
     pass
 
 
-def momentum():
+def momentum(m,v):
+    return(m*v)
     pass
 
 
-def force(mass, acceleration=None, velocity=None, time=None):
+def force(m,a):
+    return(m*a)
     pass
 
 
-def gravitational_force():
+def gravitational_force(M,m,r,G=6.674*(10**-11)):
+    return((G*M*m)/r**20)
     pass
 
 
