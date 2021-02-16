@@ -56,29 +56,83 @@ def acceleration(velocity, time):
     """
     pass
 
-def initial_velocity(v,a,t):
-    return(v-a*t)
-    pass
+def initial_velocity(final_velocity, acceleration, time):
+    """
+           Calculate the initial_velocity given final_velocity, acceleration and time
+           Parameters
+           ----------
+           final_velocity : float
+           acceleration : float
+           time : float
+
+           Returns
+           -------
+           float
+       """
+    return final_velocity - acceleration * time
 
 
-def final_velocity(u,a,t):
-    return(u+a*t)
-    pass
+def final_velocity(initial_velocity, acceleration, time):
+    """
+               Calculate the final_velocity given initial_velocity, acceleration and time
+               Parameters
+               ----------
+               initial_velocity : float
+               acceleration : float
+               time : float
+
+               Returns
+               -------
+               float
+           """
+    return initial_velocity + acceleration * time
 
 
-def momentum(m,v):
-    return(m*v)
-    pass
+def momentum(mass, velocity):
+    """
+                   Calculate the momentum given mass and velocity
+                   Parameters
+                   ----------
+                   mass : float
+                   velocity : float
+
+                   Returns
+                   -------
+                   float
+               """
+    return mass * velocity
 
 
-def force(m,a):
-    return(m*a)
-    pass
+def force(mass, acceleration):
+    """
+                       Calculate the momentum given mass and velocity
+                       Parameters
+                       ----------
+                       mass : float
+                       acceleration : float
+
+                       Returns
+                       -------
+                       float
+                   """
+    return mass * acceleration
 
 
-def gravitational_force(M,m,r,G=6.674*(10**-11)):
-    return((G*M*m)/r**20)
-    pass
+def gravitational_force(M, m, r, G = 6.674 * ( 10 ** - 11 ) ) :
+    """
+                           Calculate the gravitational_force given Mass of object1=M, Mass of object2=m, Distance
+                           between center of masses=r and Gravitational constant=G
+                           Parameters
+                           ----------
+                           M : float
+                           m : float
+                           r : float
+
+                           Returns
+                           -------
+                           float
+                       """
+    return  G * M * m  / r ** 2
 
 
 def work():
