@@ -58,80 +58,80 @@ def acceleration(velocity, time):
 
 def initial_velocity(final_velocity, acceleration, time):
     """
-           Calculate the initial_velocity given final_velocity, acceleration and time
-           Parameters
-           ----------
-           final_velocity : float
-           acceleration : float
-           time : float
+        Calculate the initial_velocity given final_velocity, acceleration and time
+        Parameters
+        ----------
+        final_velocity : float
+        acceleration : float
+        time : float
 
-           Returns
-           -------
-           float
-       """
+        Returns
+        -------
+        float
+    """
     return final_velocity - acceleration * time
 
 
 def final_velocity(initial_velocity, acceleration, time):
     """
-               Calculate the final_velocity given initial_velocity, acceleration and time
-               Parameters
-               ----------
-               initial_velocity : float
-               acceleration : float
-               time : float
+        Calculate the final_velocity given initial_velocity, acceleration and time
+        Parameters
+        ----------
+        initial_velocity : float
+        acceleration : float
+        time : float
 
-               Returns
-               -------
-               float
-           """
+        Returns
+        -------
+        float
+    """
     return initial_velocity + acceleration * time
 
 
 def momentum(mass, velocity):
     """
-                   Calculate the momentum given mass and velocity
-                   Parameters
-                   ----------
-                   mass : float
-                   velocity : float
+        Calculate the momentum given mass and velocity
+        Parameters
+        ----------
+        mass : float
+        velocity : float
 
-                   Returns
-                   -------
-                   float
-               """
+        Returns
+        -------
+        float
+    """
     return mass * velocity
 
 
 def force(mass, acceleration):
     """
-                       Calculate the momentum given mass and velocity
-                       Parameters
-                       ----------
-                       mass : float
-                       acceleration : float
+        Calculate the momentum given mass and velocity
+        Parameters
+        ----------
+        mass : float
+        acceleration : float
 
-                       Returns
-                       -------
-                       float
-                   """
+        Returns
+        -------
+        float
+    """
     return mass * acceleration
 
 
 def gravitational_force(M, m, r, G = 6.674 * ( 10 ** - 11 ) ) :
     """
-                           Calculate the gravitational_force given Mass of object1=M, Mass of object2=m, Distance
-                           between center of masses=r and Gravitational constant=G
-                           Parameters
-                           ----------
-                           M : float
-                           m : float
-                           r : float
+        Calculate the gravitational_force given Mass of object1=M, Mass of object2=m, Distance
+        between center of masses=r and Gravitational constant=G
+        Parameters
+        ----------
+        M : float
+        m : float
+        r : float
 
-                           Returns
-                           -------
-                           float
-                       """
+        Returns
+        -------
+        float
+    """
     return  G * M * m  / r ** 2
 
 
