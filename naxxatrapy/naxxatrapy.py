@@ -1,3 +1,5 @@
+#Authors:[Sagar,Sanath,Barshneyo,Hriday,Samriddhi]
+
 def velocity(displacement, time):
     """
         Calculate velocity given displacement and time
